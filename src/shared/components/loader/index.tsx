@@ -1,11 +1,12 @@
-import { ReactElement } from "react";
-import { mdiLoading } from '@mdi/js';
+import {ReactElement} from "react";
+import {mdiLoading} from '@mdi/js';
 import Icon from '@mdi/react';
+
 const Loader = (): ReactElement => (
-    <div className='fixed w-full h-full bg-white z-[1000]'>
+    <div className='fixed w-full h-full z-[1000]'>
         <div className='h-screen flex items-center justify-center '>
-            <div className="animate-spin">
-                <Icon path={mdiLoading} size={3} color="#58A0A3"/>
+            <div className="animate-spin fill-primary">
+                <Icon path={mdiLoading} size={3} color=""/>
             </div>
         </div>
     </div>
