@@ -10,11 +10,14 @@ const SearchLayout = (): ReactNode => {
         <>
             {
                 isVisible ?
-                    <form onSubmit={handleSubmit}
-                          className='fixed w-full top-20 flex flex-col items-center justify-center'>
-                        <input type="text" className='bg-default_accent p-2 text-white min-w-96 rounded'
-                               placeholder='Поиск' {...form.register('search')}/>
-                    </form> : <>
+                    <div className='absolute backdrop-blur bg-white/5 w-full h-full z-10'>
+                        <form onSubmit={handleSubmit}
+                              className='fixed w-full top-20 flex flex-col items-center justify-center z-10 '>
+                            <input type="text" className='bg-default_accent p-2 text-white min-w-96 rounded'
+                                   placeholder='Поиск' {...form.register('search')}/>
+                        </form>
+                    </div>
+                    : <>
 
                     </>
             }

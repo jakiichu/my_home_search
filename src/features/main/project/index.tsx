@@ -25,7 +25,7 @@ const ProjectItem = ({url, title, path, keyCombination}: IProjects): ReactNode =
             <p>
                 {title}
             </p>
-            <p className='text-primary absolute top-4 left-4'>{keyCombination}</p>
+            <p className='text-primary absolute top-1 left-1'>{keyCombination}</p>
         </a>
     );
 };
