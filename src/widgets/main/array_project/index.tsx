@@ -1,4 +1,4 @@
-import {mdiAccount, mdiGitlab, mdiKeyboard} from "@mdi/js";
+import {mdiAccount, mdiGithub, mdiGitlab, mdiKeyboard} from "@mdi/js";
 import {ReactNode} from "react";
 import {IProjectsArray} from "@/shared/interface/project";
 import ProjectItem from "@/features/main/project";
@@ -17,11 +17,18 @@ const ArrayProject = (): ReactNode => {
             title: 'gitlab.ipst',
             url: 'https://gitlab.ipst-dev.com/',
             path: mdiGitlab
-        }, {
+        },
+        {
             keyCombination: '3',
             title: 'ipst.stage',
             url: 'https://ipst-platform.stage.ipst-dev.com/report',
             path: mdiAccount
+        },
+        {
+            keyCombination: '4',
+            title: 'github',
+            url: 'https://github.com/jakiichu',
+            path: mdiGithub
         },
     ]
     return (
