@@ -26,6 +26,7 @@ const ArrayProject = (): ReactNode => {
     ]
     return (
         <div className={`grid grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto`}>
+            <p className='text-primary col-span-4'>alt</p>
             {
                 projects.map((project) => <ProjectItem  {...project}/>)
             }
