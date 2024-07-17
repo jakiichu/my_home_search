@@ -20,11 +20,12 @@ const ProjectItem = ({url, title, path, keyCombination}: IProjects): ReactNode =
     }, []);
     return (
         <a href={url}
-           className='h-24 text-center text-white fill-primary bg-default_accent rounded *:mx-auto'>
+           className='h-24 text-center text-white fill-primary bg-default_accent rounded *:mx-auto relative'>
             <Icon path={path} size={3} color=''/>
             <p>
                 {title}
             </p>
+            <p className='text-primary absolute top-4 left-4'>{keyCombination}</p>
         </a>
     );
 };
