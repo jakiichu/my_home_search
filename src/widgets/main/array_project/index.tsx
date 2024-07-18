@@ -1,4 +1,4 @@
-import {mdiAccount, mdiGithub, mdiGitlab, mdiKeyboard} from "@mdi/js";
+import {mdiAccount, mdiForumPlus, mdiGithub, mdiGitlab, mdiKeyboard} from "@mdi/js";
 import {ReactNode} from "react";
 import {IProjectsArray} from "@/shared/interface/project";
 import ProjectItem from "@/features/main/project";
@@ -29,6 +29,12 @@ const ArrayProject = (): ReactNode => {
             title: 'github',
             url: 'https://github.com/jakiichu',
             path: mdiGithub
+        },
+        {
+            keyCombination: '5',
+            title: 'chat_gpt',
+            url: 'https://arena.lmsys.org/',
+            path: mdiForumPlus
         },
     ]
     return (
