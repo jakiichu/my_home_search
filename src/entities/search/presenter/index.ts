@@ -21,6 +21,7 @@ export const useSearch = () => {
         switch (searchEngine.toLowerCase()) {
             case 'я':
             case 'z':
+            case 'zov':
                 window.location.href = params.setParams('https://yandex.ru/search/', {text: message})
                 break
             case 'g':
